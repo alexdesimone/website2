@@ -1,3 +1,331 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+
+/* mixins, variables, etc. */
+
+$grayMediumLight: #eaeaea;
+
+@mixin box_sizing {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/* universal */
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	padding-top: 50px;
+}
+
+section {
+	overflow: auto;
+}
+
+textarea {
+	resize: vertical;
+}
+
+.center {
+	text-align: center;
+	h1 {
+		margin-bottom: 10px;
+	}
+}
+
+
+/* header */
+
+
+.nav.pull-right {
+  margin-top: 8px;
+}
+
+#s4s-logo {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 200px;
+	float: left;
+}
+
+/* Home Page */
+
+.home-page {
+	padding-top: 50px;
+	padding-bottom: 80px;
+	margin-bottom: 0px;
+	background:url(home-bg.png) repeat-x; 
+}
+
+
+.home-buttons {
+	margin-top: 10px;
+	margin-left: 280px;
+	position: relative;
+}
+
+#splash-icons {
+	margin-top: 70px;
+	margin-bottom: 30px;
+}
+
+#splash-icons2 {
+	margin-top: 70px;
+	margin-bottom: 50px;
+}
+
+
+#button-margin {
+	margin-left: 30px;
+	margin-right:15px;
+}
+
+.well {
+	min-height:11px;
+	width: 840px;
+	margin-top: 10px;
+	margin-left: 0px;
+	padding: 10px;
+	position:relative;
+}
+
+#rss {
+	width: 25px;
+	margin-bottom: -6px;
+	margin-right: 2px;
+}
+
+/* Events Page */
+
+#events {
+	padding-top: 80px;
+	padding-bottom: 0px;
+	margin: 0px;
+	background:url(events-bg.png) repeat-x; 
+	height: 460px;
+}
+
+
+#eventbrite {
+	color: #f5b220;	
+}
+
+#event-form {
+	width: 350px;
+	margin: 0px;
+}
+
+#signup-button {
+	size: 40px;
+	margin-left: 15px;
+}
+
+#lock-icon {
+	height:20px;
+	padding-top:10px;
+	padding-right:10px;
+	margin:0px;
+}
+
+
+/* Services */ 
+
+#services {
+	padding-top: 80px;
+	padding-bottom: 0px;
+	margin: 0px;
+	background:url(services-bg.png) repeat-x;
+	height: 540px;
+}
+
+/* Apps */
+
+#apps {
+	padding-top: 80px;
+	padding-bottom: 0px;
+	margin: 0px;
+	background:url(home-bg.png) repeat-x;
+	height: 540px;
+}
+
+/* Community */
+
+#community {
+	padding-top: 80px;
+	padding-bottom: 0px;
+	margin: 0px;
+	background:url(events-bg.png) repeat-x;
+	height: 460px;
+}
+
+/* Jobs */
+
+#jobs {
+	padding-top: 80px;
+	padding-bottom: 0px;
+	margin: 0px;
+	background:url(services-bg.png) repeat-x;
+	height: 540px;
+}
+
+#about {
+	padding-top: 80px;
+	padding-bottom: 0px;
+	margin: 0px;
+	height: 740px;
+}
+
+#contact {
+	padding-top: 80px;
+	padding-bottom: 0px;
+	margin: 0px;
+	background:url(contact-bg.png) repeat-x;
+	height: 740px;
+}
+
+
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1;
+}
+
+h1 {
+	font-size: 4em;
+	letter-spacing: -2px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	text-align: center;
+	position:relative;
+}
+
+h2 {
+  font-size: 1.9em;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: normal;
+  color: $grayLight;
+}
+
+h7 {
+	font-size: 2.3em;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 0px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	text-align: left;
+	position:relative;
+}
+h8 {
+	font-size: 2.3em;
+	color: black;
+	font-weight: bold;
+	letter-spacing: 0px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	text-align: left;
+	position:relative;
+}
+
+
+p {
+  font-size: 1.3em;
+  line-height: 1.3em;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+p2 {
+  font-size: 1em;
+  line-height: 1.3em;
+  color: white;
+}
+
+
+
+.span4 {
+	padding: 20px;
+}
+
+.offset1 {
+	position:relative;
+}
+
+.page-icon {
+	margin-bottom: -5px;
+	padding-right: 30px;
+}
+
+
+/* miscellaneous */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+
+/* sidebar */
+
+aside {
+  section {
+    padding: 10px 0;
+    border-top: 1px solid $grayLighter;
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+    span {
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 1.6em;
+      text-align: left;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+    }
+  }
+}
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+
+/* forms */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  padding: 10px;
+  height: auto;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+#error_explanation {
+  color: #f00;
+  ul {
+    list-style: none;
+    margin: 0 0 18px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .control-group;
+  @extend .error;
+}

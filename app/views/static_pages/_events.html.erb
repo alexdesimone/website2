@@ -1,0 +1,17 @@
+<div id="events">
+	<div class="span4 offset1">
+		<%= image_tag("events-icon.png", alt: "Events", class: "page-icon" ) %>
+		<h7>
+			Our Events
+		</h7>
+	</div>
+	<div class="row">
+		<div class="span6">
+			<p>Our public events are usually free or involve a small fee, and focus on educating our attendees on topics around sales, inside sales, prospecting, deal management, closing, account management, and more - basically if it's related to sales, we cover it.</br>
+				</br>
+				We use <%= link_to("EventBrite", "http://www.eventbrite.com/org/2354752688", id:"eventbrite") %> to promote our events, and have done events in San Francisco, Silicon Valley, and Austin.  
+			</p>
+			<%= render 'forms/event_form' %>
+		</div>
+	</div>
+</div>

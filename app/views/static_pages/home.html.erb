@@ -1,2 +1,30 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<div class="home-page">
+	<h1>Inside Sales Education and Software</h1>
+	<h2>
+		We teach, train, motivate, and consult technology startups -- and build our own software.
+	</h2>
+	<div class="center">
+	<a title="$.scrollTo( '#', 800, {easing:'elasout'} );" href="services" class="btn btn-large btn-primary" >Learn About Our Services</a>
+	<a title="$.scrollTo( '#', 800, {easing:'elasout'} );" href="apps" class="btn btn-large btn-success" id="button-margin">Find Useful Sales Apps and Plug-ins</a>
+	<%= link_to image_tag("arrow.png", alt: "Click Here!" )  %>
+	</div>
+	<div class="center" id="splash-icons">
+		<%= link_to image_tag("1-leadcreator.png", alt: "Lead Creator" ) %>
+		<%= link_to image_tag("2-B2B.png", alt: "B2B Lead Generation" ) %>
+		<%= link_to image_tag("3-salesforce.png", alt: "CRM Setup & Training" ) %>
+		<%= link_to image_tag("4-strategy.png", alt: "Sales Strategy" ) %>
+		<%= link_to image_tag("5-hubspot.png", alt: "Hubspot Consulting" ) %>
+	</div>
+	<div class="offset1">
+		<h4>
+			<%= image_tag("rss.png", alt: "RSS" , id: "rss") %>
+			Latest Blogs, News, and Events
+		</h4>
+		<div class="well">
+			<h6>
+				<%= link_to("July 25, 2012 - Sales for B2B Startups - San Francisco, CA | Free", "http://sales4startupssoma2.eventbrite.com/") %>
+			</h6>
+		</div>
+	</div>
+</div>
+
