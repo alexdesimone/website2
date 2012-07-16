@@ -205,6 +205,10 @@ textarea {
 	height: 540px;
 }
 
+#arrow {
+	margin-top: -8px;
+}
+
 /* About us */
 
 #about {
@@ -227,6 +231,10 @@ textarea {
 	margin: 0px;
 	background:url(contact-bg.png) repeat-x;
 	height: 740px;
+}
+
+#message-box {
+	height: 118px;
 }
 
 
@@ -313,6 +321,13 @@ p4 {
   color: white;
   text-transform: uppercase;
   
+}
+
+p6 {
+  font-size: 1em;
+  line-height: 1.3em;
+  color: white;
+  font-style: italic;
 }
 
 

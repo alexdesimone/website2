@@ -1,8 +1,17 @@
 <div id="contact">
-	<div class="offset1">
-		<%= image_tag("contact-icon.png", alt: "Contact Us", class: "page-icon" ) %>
-		<h8>
-			Contact Us
-		</h8>
+	<div class="row">
+		<div class="offset1">
+			<%= image_tag("contact-icon.png", alt: "Contact Us", class: "page-icon" ) %>
+			<h8>
+				Contact Us
+			</h8>
+		</div>
+		<div class="offset11">
+			<span style='color: #28b3e8; font-weight: bold;'>Email: </span>
+			<span>info@sales4startups.org</span></br>
+			<span style='color: #28b3e8; font-weight: bold;'>Phone: </span>
+			<span>+1.415.503.7060</span>
+		</div>
+		<%= render 'forms/contact_form' %>
 	</div>
 </div>
