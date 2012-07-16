@@ -1,8 +1,20 @@
 <div id="apps">
-	<div class="span4 offset1">
+	<div class="offset1">
 		<%= image_tag("apps-icon.png", alt: "Apps", class: "page-icon" ) %>
 		<h8>
 			Our Apps
 		</h8>
+	</div>
+	<div class="row">
+		<div class="span6">
+			<p class="black-p">
+				Our apps are designed to be lightweight and easy-to-use to help sales people do simple everyday tasks.
+			</p>
+			<a title="$.scrollTo( '#apps', 800, {easing:'elasout'} );" href="#apps" class="btn btn-large btn-success" id="button-margin">Find Useful Sales Apps</a>
+			<p class="black-p">
+				Got an idea for a sales app? We want to hear it!
+			</p>
+			<%= render 'forms/app_form'%>
+		</div>
 	</div>
 </div>

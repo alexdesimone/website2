@@ -108,13 +108,20 @@ textarea {
 	padding-bottom: 0px;
 	margin: 0px;
 	background:url(events-bg.png) repeat-x; 
-	height: 460px;
+	height: 570px;
 }
 
 
 #eventbrite {
 	color: #f5b220;	
 }
+
+.event-links {
+	color: #f5b220;
+	font-size: 0.9em;
+		
+}
+
 
 #event-form {
 	width: 350px;
@@ -154,6 +161,13 @@ textarea {
 	height: 540px;
 }
 
+#app-form {
+	width: 350px;
+	margin: 0px;
+	margin-right: 20px;
+	
+}
+
 /* Community */
 
 #community {
@@ -161,8 +175,25 @@ textarea {
 	padding-bottom: 0px;
 	margin: 0px;
 	background:url(events-bg.png) repeat-x;
-	height: 460px;
+	height: 570px;
 }
+
+.facebook {
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-bottom: -6px;
+}
+
+.community-line {
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-bottom: -15px;
+}
+
+.convo {
+	padding-left: 75px;
+}
+
 
 /* Jobs */
 
@@ -174,12 +205,21 @@ textarea {
 	height: 540px;
 }
 
+/* About us */
+
 #about {
 	padding-top: 80px;
 	padding-bottom: 0px;
 	margin: 0px;
 	height: 740px;
 }
+
+.photos {
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+/* Contact Us */
 
 #contact {
 	padding-top: 80px;
@@ -241,9 +281,19 @@ p {
   font-size: 1.3em;
   line-height: 1.3em;
   color: white;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 0px;
+  padding-bottom: 30px;
+  padding-top: 50px;
 }
+
+.black-p {
+  color: #434343;
+}
+
+.blue-p {
+  color: #3eaee3;
+}
+
 
 p2 {
   font-size: 1em;
@@ -251,11 +301,33 @@ p2 {
   color: white;
 }
 
+p3 {
+  font-size: 1.5em;
+  line-height: 1.3em;
+  color: white;
+}
+
+p4 {
+  font-size: 1.1em;
+  line-height: 1.3em;
+  color: white;
+  text-transform: uppercase;
+  
+}
+
+
+
 
 
 .span4 {
 	padding: 20px;
 }
+
+.span6, .span8, .span10, .span12 {
+	margin-left: 100px;
+}
+
+
 
 .offset1 {
 	position:relative;
@@ -264,6 +336,9 @@ p2 {
 .page-icon {
 	margin-bottom: -5px;
 	padding-right: 30px;
+}
+.row {
+	margin:0px;
 }
 
 

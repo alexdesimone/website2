@@ -1,5 +1,5 @@
 <div id="events">
-	<div class="span4 offset1">
+	<div class="offset1">
 		<%= image_tag("events-icon.png", alt: "Events", class: "page-icon" ) %>
 		<h7>
 			Our Events
@@ -13,5 +13,21 @@
 			</p>
 			<%= render 'forms/event_form' %>
 		</div>
-	</div>
+		<div class="span6">
+			<p>
+				<%= image_tag("recent-events-icon.png", alt: "Upcoming and Recent Events", class: "page-icon" ) %>
+					<p3>
+						Upcoming and Recent Events
+					</p3>
+				</br>
+				</br>
+				<p4>
+					July 19, 2012 </br> <%= link_to("Sales for B2B Startups - Austin, TX", "http://sales4startupsaustin-eorg.eventbrite.com/", class: "event-links") %> </br></br>
+					July 25, 2012 </br> <%= link_to("Sales for B2B Startups - San Francisco, CA", "http://sales4startupssoma2-eorg.eventbrite.com/", class: "event-links") %> </br></br>
+					August 22, 2012 </br> <%= link_to("Account Management and Client Services - San Francisco, CA", "http://sales4startupsamseries1-eorg.eventbrite.com/", class: "event-links") %> </br></br>
+					September 19, 2012 </br> <%= link_to("Sales4Startups + Startupperz + Fileboard Present: Sales Presentations for Startups 101 - Palo Alto, CA", "http://sales4startupspaloalto2-eorg.eventbrite.com/", class: "event-links") %> </br></br>
+				</p4>
+			</p>
+		</div>
+	</div>	
 </div>
