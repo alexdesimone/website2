@@ -148,7 +148,11 @@ textarea {
 	padding-bottom: 0px;
 	margin: 0px;
 	background:url(services-bg.png) repeat-x;
-	height: 540px;
+	height: 780px;
+}
+
+.no-margin {
+	margin-left: 0px;
 }
 
 /* Apps */
@@ -263,6 +267,11 @@ h2 {
   color: $grayLight;
 }
 
+h3{
+	color: white;
+	font-size: 1.1em;
+}
+
 h7 {
 	font-size: 2.3em;
 	color: white;
@@ -338,7 +347,7 @@ p6 {
 	padding: 20px;
 }
 
-.span6, .span8, .span10, .span12 {
+.span6, .span8, .span9, .span10, .span12 {
 	margin-left: 100px;
 }
 
