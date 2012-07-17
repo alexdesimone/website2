@@ -46,10 +46,10 @@ test:
   username: alexdesimone
   password:
 
-# production:
-#   adapter: postgresql
-#   encoding: unicode
-#   database: website2_production
-#   pool: 5
-#   username: alexdesimone
-#   password:
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: website2_production
+  pool: 5
+  username: alexdesimone
+  password:
