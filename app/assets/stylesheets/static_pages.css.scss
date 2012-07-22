@@ -104,11 +104,12 @@ textarea {
 /* Events Page */
 
 #events {
+	overflow: hidden;
 	padding-top: 80px;
 	padding-bottom: 0px;
 	margin: 0px;
-	background:url(events-bg.png) repeat-x; 
-	height: 570px;
+	background: #28b2e7; 
+	# background:url(events-bg.png) repeat-x; ;
 }
 
 
@@ -144,11 +145,11 @@ textarea {
 /* Services */ 
 
 #services {
+	overflow: hidden;
 	padding-top: 80px;
 	padding-bottom: 0px;
 	margin: 0px;
-	background:url(services-bg.png) repeat-x;
-	height: 940px;
+	background: #434343;
 }
 
 .no-margin {
